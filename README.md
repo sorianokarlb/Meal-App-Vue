@@ -31,10 +31,6 @@ npm install
 
 npm run serve
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Acknowledgements
 
 - TheMealDB for providing the meal data API.
