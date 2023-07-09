@@ -1,41 +1,29 @@
-# Meal-app
+# mealapp-vue
 
-Meal-app is a web application built with Vue 3, Vuex, Tailwind CSS, and utilizes public APIs to provide a seamless experience for browsing and discovering delicious meals.
+This template should help get you started developing with Vue 3 in Vite.
 
-## Features
+## Recommended IDE Setup
 
-- Browse a wide variety of meals from different cuisines.
-- Search for meals by name or ingredients.
-- View detailed information about each meal, including ingredients and instructions for preparation.
-- Responsive design for a seamless experience on different devices.
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Technologies Used
+## Customize configuration
 
-- Vue 3: A progressive JavaScript framework for building user interfaces.
-- Vuex: A state management pattern and library for Vue applications.
-- Tailwind CSS: A utility-first CSS framework for rapid UI development.
-- Public APIs: Utilizing public APIs to fetch meal data
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Getting Started
+## Project Setup
 
-To get started with the Meal-app project, follow these steps:
-
-1. Clone the repository: git clone https://github.com/your-username/Meal-app.git
-
-2. Install the dependencies:
-
-cd Meal-app
+```sh
 npm install
+```
 
-4. Run the development server:
+### Compile and Hot-Reload for Development
 
-npm run serve
+```sh
+npm run dev
+```
 
-## Acknowledgements
+### Compile and Minify for Production
 
-- TheMealDB for providing the meal data API.
-- TheMealDB for providing the additional API used in the project.
-- The Vue.js, Vuex, and Tailwind CSS communities for their excellent libraries and resources.
-
-Feel free to update this README with any additional information specific to your project. Happy coding!
-
+```sh
+npm run build
+```
