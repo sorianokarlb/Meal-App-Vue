@@ -2,6 +2,7 @@
 import { ref, computed, onMounted } from 'vue';
 import store from '../store/store';
 import { useRoute } from 'vue-router';
+
 const route = useRoute();
 let keyword = ref('');
 let meals = computed(()=> store.state.searchedMeals)
@@ -12,9 +13,7 @@ async function searchMeals() {
 
 onMounted(()=> {
     keyword.value = route.params.name
-    if(keyword.value){
-        searchMeals();
-    }
+    if(keyword.value){searchMeals();}
 })
 </script>
 
@@ -30,8 +29,8 @@ onMounted(()=> {
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-8">
-        <div v-for="meal in meals" :key="meal.idMeal" class="bg-teal-200 rounded-xl">
-            <router-link to="/">
+        <div v-for="meal in meals" :key="meal.idMeal" class="bg-slate-200 rounded-xl border border-teal-600">
+            <router-link :to="{name: 'MealDetails', params: {id: meal.idMeal}}">
                 <img 
                     :src="meal.strMealThumb" 
                     :alt="meal.strMeal" 
