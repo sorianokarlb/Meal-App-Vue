@@ -44,9 +44,10 @@ import ViewSourceBtn from '../components/ViewSourceBtn.vue';
             </div>
          </div>
 
-         <div class="flex flex-row justify-between gap-1 mt-4">
+         <div class="flex flex-row gap-1 mt-4">
             <YoutubeBtn :href="meal.strYoutube">Go to Youtube</YoutubeBtn>
             <ViewSourceBtn :href="meal.strSource">View Source</ViewSourceBtn>
          </div>
+         
     </div>
 </template>
