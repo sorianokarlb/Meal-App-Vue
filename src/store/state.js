@@ -1,3 +1,5 @@
 export default {
-    searchedMeals: [] // store the state
+    searchedMeals: [], // store the state
+    mealsByLetter: [],
+    mealsByIngredient: [],
 }

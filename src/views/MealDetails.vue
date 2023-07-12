@@ -1,7 +1,7 @@
 <script setup>
-    import { onMounted, ref } from 'vue';
-    import { useRoute } from 'vue-router';
-    import instance from '../axiosClient';
+import { onMounted, ref } from 'vue';
+import { useRoute } from 'vue-router';
+import instance from '../axiosClient';
 import YoutubeBtn from '../components/YoutubeBtn.vue';
 import ViewSourceBtn from '../components/ViewSourceBtn.vue';
 
@@ -15,14 +15,17 @@ import ViewSourceBtn from '../components/ViewSourceBtn.vue';
 </script>
 
 <template>
-    <div class="w-[800px] mx-auto p-8">
-        <pre>{{ meal }}</pre>
+    <div class="max-w-[800px] w-[800px] mx-auto p-8">
          <h1 class="text-5xl font-bold mb-5">{{ meal.strMeal }}</h1>
-         <img :src="meal.strMealThumb" :alt="meal.strMeal">
+         <img :src="meal.strMealThumb" :alt="meal.strMeal" class="max-w-[100%]">
          <div class="grid grid-cols-1 sm:grid-cols-3 text-lg py-2">
             <span><strong>Category: </strong>{{ meal.strCategory }}</span>
             <span><strong>Area: </strong>{{ meal.strArea }}</span>
             <span><strong>Tags: </strong>{{ meal.strTags }}</span>
+         </div>
+
+         <div class="my-3">
+            {{ meal.strInstructions }}
          </div>
 
          <div class="grid grid-cols-1 sm:grid-cols-2">
