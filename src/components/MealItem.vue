@@ -10,7 +10,7 @@ const { meal } = defineProps({
 
 <template>
     <div 
-    class="bg-slate-200 rounded-xl border border-teal-600"
+    class="bg-slate-200 rounded-xl border border-[#474BFF] hover:scale-105 transition-all"
     >
         <router-link 
         :to="{name: 'MealDetails', params: {id: meal.idMeal}}"

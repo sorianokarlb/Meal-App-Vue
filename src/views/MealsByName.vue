@@ -24,9 +24,12 @@ onMounted(()=> {
 
 <template>
     <div class="p-8 pb-0">
+        <h1 class="text-4xl font-bold mb-4 text-[#474BFF]">Search Meals by Name</h1>
+    </div>
+    <div class="px-8 pb-0">
         <input 
             type="text" 
-            class="rounded p-5 border border-teal-300 w-full" 
+            class="rounded p-5 border border-[#474BFF] w-full" 
             placeholder="Search For Meals..."
             v-model="keyword"
             @change="searchMeals"

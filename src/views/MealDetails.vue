@@ -16,12 +16,12 @@ import ViewSourceBtn from '../components/ViewSourceBtn.vue';
 
 <template>
     <div class="max-w-[800px] w-[800px] mx-auto p-8">
-         <h1 class="text-5xl font-bold mb-5">{{ meal.strMeal }}</h1>
+         <h1 class="text-4xl font-bold mb-5 text-[#474BFF]">{{ meal.strMeal }}</h1>
          <img :src="meal.strMealThumb" :alt="meal.strMeal" class="max-w-[100%]">
          <div class="grid grid-cols-1 sm:grid-cols-3 text-lg py-2">
-            <span><strong>Category: </strong>{{ meal.strCategory }}</span>
-            <span><strong>Area: </strong>{{ meal.strArea }}</span>
-            <span><strong>Tags: </strong>{{ meal.strTags }}</span>
+            <span><strong>Category: </strong><span class="bg-[#474BFF] rounded-full py-1 px-3 bg-opacity-60">{{ meal.strCategory }}</span></span>
+            <span><strong>Area: </strong><span class="bg-[#474BFF] rounded-full py-1 px-3 bg-opacity-60">{{ meal.strArea }}</span></span>
+            <span><strong>Tags: </strong><span class="bg-[#474BFF] rounded-full py-1 px-3 bg-opacity-60">{{ meal.strTags }}</span></span>
          </div>
 
          <div class="my-3">
